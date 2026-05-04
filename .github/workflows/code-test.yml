@@ -20,6 +20,7 @@ jobs:
         with:
           python-version: ${{ env.PY_BASE_VERSION }}
           coverage: true
+          install-yaml: true
 
       - name: Upload coverage report
         if: always()
